@@ -79,13 +79,9 @@ body {
 .stok-card::before {
     content: '';
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 3px;
+    top: 0; left: 0; right: 0; height: 3px;
     background: linear-gradient(90deg, #ff0080, #4a00e0);
-    opacity: 0;
-    transition: opacity 0.3s;
+    opacity: 0; transition: opacity 0.3s;
 }
 .stok-card:hover { border-color: rgba(255,0,128,0.3); transform: translateY(-2px); }
 .stok-card:hover::before { opacity: 1; }
@@ -96,73 +92,25 @@ body {
 .stok-card .progress-wrap { background: rgba(255,255,255,0.06); border-radius: 10px; height: 3px; margin: 8px 12px 0; overflow: hidden; }
 .stok-card .progress-fill { height: 100%; background: linear-gradient(90deg, #ff0080, #4a00e0); border-radius: 10px; transition: width 0.5s ease; }
 .stok-card .actions { margin-top: 10px; display: flex; gap: 6px; justify-content: center; }
-.stok-card .actions button { 
-    border: none; 
-    border-radius: 8px; 
-    padding: 6px 10px; 
-    font-size: 13px; 
-    cursor: pointer; 
-    transition: 0.2s; 
-    font-weight: 700; 
-    font-family: inherit;
-}
-.stok-card .actions .btn-jual {
-    background: linear-gradient(135deg, #ff0080, #4a00e0);
-    color: white;
-    box-shadow: 0 0 10px rgba(255, 0, 128, 0.25);
-    flex: 1;
-}
+.stok-card .actions button { border: none; border-radius: 8px; padding: 6px 10px; font-size: 13px; cursor: pointer; transition: 0.2s; font-weight: 700; font-family: inherit; }
+.stok-card .actions .btn-jual { background: linear-gradient(135deg, #ff0080, #4a00e0); color: white; box-shadow: 0 0 10px rgba(255, 0, 128, 0.25); flex: 1; }
 .stok-card .actions .btn-jual:hover { transform: scale(1.05); box-shadow: 0 0 16px rgba(255, 0, 128, 0.4); }
 .stok-card .actions .btn-jual:disabled { background: rgba(255,255,255,0.05); color: #444; cursor: not-allowed; transform: none; box-shadow: none; }
-.stok-card .actions .btn-back {
-    background: rgba(255,255,255,0.06);
-    color: #888;
-    border: 1px solid rgba(255,255,255,0.1);
-    padding: 6px 8px;
-    font-size: 14px;
-}
+.stok-card .actions .btn-back { background: rgba(255,255,255,0.06); color: #888; border: 1px solid rgba(255,255,255,0.1); padding: 6px 8px; font-size: 14px; }
 .stok-card .actions .btn-back:hover { background: rgba(76, 175, 80, 0.15); color: #81c784; border-color: rgba(76,175,80,0.3); transform: scale(1.05); }
 
 .input-beli { display: flex; gap: 8px; margin-bottom: 16px; }
-.input-beli select, .input-beli input {
-    background: rgba(255,255,255,0.06);
-    border: 1px solid rgba(255,255,255,0.1);
-    border-radius: 10px;
-    padding: 10px 12px;
-    font-size: 14px;
-    color: #e0e0e0;
-    font-family: inherit;
-    outline: none;
-    transition: border 0.2s;
-}
+.input-beli select, .input-beli input { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 10px 12px; font-size: 14px; color: #e0e0e0; font-family: inherit; outline: none; transition: border 0.2s; }
 .input-beli select { flex: 1; }
 .input-beli select option { background: #1a1a2e; color: #e0e0e0; }
 .input-beli input { width: 70px; text-align: center; }
 .input-beli select:focus, .input-beli input:focus { border-color: rgba(255, 0, 128, 0.4); }
 .input-beli button {
-    background: linear-gradient(135deg, #ff0080, #4a00e0);
-    color: white;
-    border: none;
-    border-radius: 10px;
-    padding: 10px 20px;
-    font-size: 14px;
-    cursor: pointer;
-    font-weight: 700;
-    font-family: inherit;
-    transition: 0.2s;
-    box-shadow: 0 0 10px rgba(255, 0, 128, 0.25);
+    background: linear-gradient(135deg, #ff0080, #4a00e0); color: white; border: none; border-radius: 10px; padding: 10px 20px; font-size: 14px; cursor: pointer; font-weight: 700; font-family: inherit; transition: 0.2s; box-shadow: 0 0 10px rgba(255, 0, 128, 0.25);
 }
 .input-beli button:hover { transform: scale(1.03); box-shadow: 0 0 16px rgba(255, 0, 128, 0.4); }
 
-.log {
-    background: rgba(255,255,255,0.03);
-    border: 1px solid rgba(255,255,255,0.06);
-    border-radius: 14px;
-    padding: 14px;
-    max-height: 200px;
-    overflow-y: auto;
-    margin-bottom: 16px;
-}
+.log { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.06); border-radius: 14px; padding: 14px; max-height: 200px; overflow-y: auto; margin-bottom: 16px; }
 .log::-webkit-scrollbar { width: 3px; }
 .log::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.1); border-radius: 4px; }
 .log p { padding: 5px 0; border-bottom: 1px solid rgba(255,255,255,0.04); color: #999; font-size: 12px; }
@@ -170,26 +118,15 @@ body {
 .log-title { font-weight: 700; color: #64b5f6; margin-bottom: 8px; font-size: 12px; text-transform: uppercase; letter-spacing: 1px; }
 .empty-log { color: #444; text-align: center; padding: 8px; font-size: 12px; }
 .bottom-bar { display: flex; justify-content: space-between; align-items: center; }
-.reset-btn {
-    background: rgba(255,255,255,0.04);
-    border: 1px solid rgba(255,255,255,0.08);
-    border-radius: 8px;
-    padding: 6px 16px;
-    font-size: 12px;
-    color: #666;
-    cursor: pointer;
-    font-family: inherit;
-    transition: 0.2s;
-}
+.reset-btn { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; padding: 6px 16px; font-size: 12px; color: #666; cursor: pointer; font-family: inherit; transition: 0.2s; }
 .reset-btn:hover { background: rgba(255,255,255,0.08); color: #999; }
 .footer { text-align: center; padding: 16px 0 8px; font-size: 11px; color: #333; letter-spacing: 1px; }
 
-/* ===== RESPONSIVE MOBILE ===== */
 @media (max-width: 700px) {
     body { padding: 10px; }
     .container { margin-top: 10px; }
-    .header h1 { font-size: 24px; }
-    .header .sub { font-size: 13px; }
+    .header h1 { font-size: 18px; }
+    .header .sub { font-size: 20px; }
     .total-stock-wrap { padding: 12px 14px; }
     .total-row { gap: 8px; font-size: 12px; }
     .total-angka { font-size: 16px; }
@@ -204,12 +141,11 @@ body {
     .input-beli select, .input-beli input { font-size: 13px; padding: 8px 10px; }
     .input-beli button { padding: 8px 16px; font-size: 13px; }
 }
-
 @media (max-width: 480px) {
     body { padding: 6px; }
     .container { margin-top: 6px; }
-    .header h1 { font-size: 20px; }
-    .header .sub { font-size: 12px; margin-top: 2px; }
+    .header h1 { font-size: 16px; }
+    .header .sub { font-size: 18px; margin-top: 2px; }
     .total-stock-wrap { padding: 10px 10px; border-radius: 12px; }
     .total-row { gap: 6px; font-size: 11px; }
     .total-label { font-size: 11px; }
@@ -217,12 +153,10 @@ body {
     .total-hasil { font-size: 15px; }
     .total-operator, .total-sama { font-size: 13px; }
     .total-sub { font-size: 10px; }
-    
     .uang-wrap { padding: 8px 10px; border-radius: 10px; }
     .uang-row { gap: 10px; }
     .uang-label { font-size: 11px; }
     .uang-nominal { font-size: 13px; }
-    
     .stok-grid { grid-template-columns: repeat(2, 1fr); gap: 6px; }
     .stok-card { padding: 10px 6px; border-radius: 12px; }
     .stok-card::before { height: 2px; }
@@ -234,18 +168,15 @@ body {
     .stok-card .actions { margin-top: 8px; gap: 4px; }
     .stok-card .actions button { font-size: 11px; padding: 4px 6px; border-radius: 6px; }
     .stok-card .actions .btn-back { padding: 4px 6px; font-size: 12px; }
-    
     .input-beli { gap: 6px; margin-bottom: 12px; }
     .input-beli select, .input-beli input { font-size: 12px; padding: 7px 8px; border-radius: 8px; }
     .input-beli select { min-width: 0; }
     .input-beli input { width: 55px; }
     .input-beli button { padding: 7px 14px; font-size: 12px; border-radius: 8px; }
-    
     .log { padding: 10px; border-radius: 12px; font-size: 11px; }
     .log p { font-size: 11px; padding: 4px 0; }
     .log-title { font-size: 11px; margin-bottom: 6px; }
     .empty-log { font-size: 11px; }
-    
     .reset-btn { font-size: 11px; padding: 5px 12px; }
     .footer { font-size: 10px; padding: 12px 0 6px; }
 }
@@ -254,41 +185,26 @@ body {
 <body>
 <div class="container">
 <div class="header">
-<h1>Stock Kaos</h1>
-<div class="sub">ANNIVERSARY 24 KCDj</div>
+<h1>Stok Kaos</h1>
+<div class="sub">ANNIV 24 KCDj</div>
 </div>
 
-<div class="total-stock-wrap" id="totalWrap">
+<div class="total-stock-wrap">
 <div class="total-row">
-    <div class="total-item">
-        <span class="total-label">Stock</span>
-        <span class="total-angka" id="totalAwal">0</span>
-    </div>
+    <div class="total-item"><span class="total-label">Stock</span><span class="total-angka" id="totalAwal">0</span></div>
     <span class="total-operator">−</span>
-    <div class="total-item">
-        <span class="total-label">Penjualan</span>
-        <span class="total-angka" id="totalTerjual">0</span>
-    </div>
+    <div class="total-item"><span class="total-label">Penjualan</span><span class="total-angka" id="totalTerjual">0</span></div>
     <span class="total-sama">=</span>
-    <div class="total-item">
-        <span class="total-label">Sisa</span>
-        <span class="total-hasil" id="totalSisa">0</span>
-    </div>
+    <div class="total-item"><span class="total-label">Sisa</span><span class="total-hasil" id="totalSisa">0</span></div>
 </div>
 <div class="total-sub">Total stok awal · update otomatis</div>
 </div>
 
-<div class="uang-wrap" id="uangWrap">
+<div class="uang-wrap">
 <div class="uang-row">
-    <div class="uang-item">
-        <span class="uang-label">Terjual</span>
-        <span class="uang-nominal" id="uangPcs">0 pcs</span>
-    </div>
+    <div class="uang-item"><span class="uang-label">Terjual</span><span class="uang-nominal" id="uangPcs">0 pcs</span></div>
     <span style="color:#444;">•</span>
-    <div class="uang-item">
-        <span class="uang-label">Total Masuk</span>
-        <span class="uang-nominal" id="uangTotal">Rp0</span>
-    </div>
+    <div class="uang-item"><span class="uang-label">Total Masuk</span><span class="uang-nominal" id="uangTotal">Rp0</span></div>
 </div>
 <div class="total-sub" style="margin-top:4px;">Nominal uang yang sudah masuk</div>
 </div>
@@ -308,7 +224,7 @@ body {
 
 <div class="bottom-bar">
 <button class="reset-btn" onclick="resetStok()">↻ Reset Stok</button>
-<div style="color:#444;font-size:12px;">Q-ber1292 | v1.9</div>
+<div style="color:#444;font-size:12px;">Kiro v1.9</div>
 </div>
 
 <div class="footer">Data tersimpan di browser</div>
@@ -319,141 +235,52 @@ const UKURAN = ['M', 'L', 'XL', 'XXL', 'XXXL', 'XXXXL', 'XXXXXL', 'XXXXXXL'];
 const HARGA = { M:130000, L:130000, XL:130000, XXL:140000, XXXL:150000, XXXXL:160000, XXXXXL:170000, XXXXXXL:180000 };
 const AWAL = { M:40, L:350, XL:300, XXL:250, XXXL:50, XXXXL:5, XXXXXL:3, XXXXXXL:2 };
 const TOTAL_AWAL = Object.values(AWAL).reduce((a,b)=>a+b, 0);
-
 let stok = {}, logs = [];
 
 function muat() {
     try {
-        const s = localStorage.getItem('ks_stok8');
-        const l = localStorage.getItem('ks_logs8');
-        if (s) stok = JSON.parse(s);
-        if (l) logs = JSON.parse(l);
+        const s = localStorage.getItem('ks_stok9'); const l = localStorage.getItem('ks_logs9');
+        if (s) stok = JSON.parse(s); if (l) logs = JSON.parse(l);
     } catch(e) {}
     UKURAN.forEach(u => { if (stok[u] === undefined) stok[u] = AWAL[u]; });
+    logs = logs.map(p => typeof p === 'string' ? {tgl:new Date().toLocaleDateString('id-ID',{day:'2-digit',month:'2-digit',year:'numeric'}).replace(/\//g,'-'), jam:'--:--', ukuran:'?', harga:'?'} : p);
 }
 
-function simpan() {
-    localStorage.setItem('ks_stok8', JSON.stringify(stok));
-    localStorage.setItem('ks_logs8', JSON.stringify(logs));
-}
+function simpan() { localStorage.setItem('ks_stok9', JSON.stringify(stok)); localStorage.setItem('ks_logs9', JSON.stringify(logs)); }
 
-function hitungUang() {
-    let uang = 0, pcs = 0;
-    UKURAN.forEach(u => {
-        const terjual = AWAL[u] - stok[u];
-        if (terjual > 0) { pcs += terjual; uang += terjual * HARGA[u]; }
-    });
-    return { pcs, uang };
-}
+function hitungUang() { let uang=0,pcs=0; UKURAN.forEach(u=>{const t=AWAL[u]-stok[u];if(t>0){pcs+=t;uang+=t*HARGA[u];}}); return {pcs,uang}; }
 
 function update() {
-    const stokSekarang = UKURAN.reduce((a,u) => a + stok[u], 0);
-    const totalTerjual = TOTAL_AWAL - stokSekarang;
-    const sisa = Math.max(0, stokSekarang);
-
+    const ss = UKURAN.reduce((a,u)=>a+stok[u],0), tt = TOTAL_AWAL - ss, sisa = Math.max(0, ss);
     document.getElementById('totalAwal').textContent = TOTAL_AWAL.toLocaleString('id-ID');
-    document.getElementById('totalTerjual').textContent = totalTerjual.toLocaleString('id-ID');
+    document.getElementById('totalTerjual').textContent = tt.toLocaleString('id-ID');
     document.getElementById('totalSisa').textContent = sisa.toLocaleString('id-ID');
-
     const duit = hitungUang();
     document.getElementById('uangPcs').textContent = duit.pcs.toLocaleString('id-ID') + ' pcs';
     document.getElementById('uangTotal').textContent = 'Rp' + duit.uang.toLocaleString('id-ID');
-
     const max = Math.max(...UKURAN.map(u=>stok[u]), 1);
-    const grid = document.getElementById('stokGrid');
-    grid.innerHTML = '';
+    const grid = document.getElementById('stokGrid'); grid.innerHTML = '';
     UKURAN.forEach(u => {
         const pct = Math.round((stok[u]/max)*100);
         const card = document.createElement('div');
         card.className = 'stok-card';
-        card.innerHTML = `
-            <div class="ukuran">${u}</div>
-            <div class="harga-card">Rp${HARGA[u].toLocaleString('id-ID')}</div>
-            <div class="jumlah">${stok[u]}</div>
-            <div class="stok-label">Sisa</div>
-            <div class="progress-wrap"><div class="progress-fill" style="width:${pct}%"></div></div>
-            <div class="actions">
-                <button class="btn-back" onclick="back('${u}')" title="Kembalikan 1">↺</button>
-                <button class="btn-jual" onclick="jual('${u}')" ${stok[u]<=0?'disabled':''}>Jual</button>
-            </div>
-        `;
+        card.innerHTML = `<div class="ukuran">${u}</div><div class="harga-card">Rp${HARGA[u].toLocaleString('id-ID')}</div><div class="jumlah">${stok[u]}</div><div class="stok-label">Sisa</div><div class="progress-wrap"><div class="progress-fill" style="width:${pct}%"></div></div><div class="actions"><button class="btn-back" onclick="back('${u}')" title="Kembalikan 1">↺</button><button class="btn-jual" onclick="jual('${u}')" ${stok[u]<=0?'disabled':''}>Jual</button></div>`;
         grid.appendChild(card);
     });
-
-    const sel = document.getElementById('sizeSelect');
-    sel.innerHTML = '';
-    UKURAN.forEach(u => {
-        const o = document.createElement('option');
-        o.value = u; o.textContent = `${u} (${stok[u]}) — Rp${HARGA[u].toLocaleString('id-ID')}`;
-        if (stok[u] <= 0) o.disabled = true;
-        sel.appendChild(o);
-    });
-
-    logUpdate();
-    simpan();
+    const sel = document.getElementById('sizeSelect'); sel.innerHTML = '';
+    UKURAN.forEach(u => { const o = document.createElement('option'); o.value = u; o.textContent = `${u} (${stok[u]}) — Rp${HARGA[u].toLocaleString('id-ID')}`; if (stok[u] <= 0) o.disabled = true; sel.appendChild(o); });
+    logUpdate(); simpan();
 }
 
-function jual(u) {
-    if (stok[u] > 0) {
-        stok[u]--;
-        const duit = hitungUang();
-        const now = new Date();
-        const tglStr = now.toLocaleDateString('id-ID', {day:'2-digit',month:'2-digit',year:'numeric'}).replace(/\//g,'-');
-        logs.unshift({tgl:tglStr, jam:wkt(), ukuran:u, harga:HARGA[u].toLocaleString('id-ID')});
-        if (logs.length > 100) logs.pop();
-        update();
-    }
-}
+function jual(u) { if (stok[u] > 0) { stok[u]--; const now = new Date(); const tglStr = now.toLocaleDateString('id-ID',{day:'2-digit',month:'2-digit',year:'numeric'}).replace(/\//g,'-'); logs.unshift({tgl:tglStr, jam:now.toLocaleTimeString('id-ID',{hour:'2-digit',minute:'2-digit'}), ukuran:u+' terjual', harga:HARGA[u].toLocaleString('id-ID')}); if (logs.length > 100) logs.pop(); update(); } }
+function back(u) { if (stok[u] < AWAL[u]) { stok[u]++; const now = new Date(); const tglStr = now.toLocaleDateString('id-ID',{day:'2-digit',month:'2-digit',year:'numeric'}).replace(/\//g,'-'); logs.unshift({tgl:tglStr, jam:now.toLocaleTimeString('id-ID',{hour:'2-digit',minute:'2-digit'}), ukuran:u+' +1', harga:'kembali'}); if (logs.length > 100) logs.pop(); update(); } }
+function beli() { const u = document.getElementById('sizeSelect').value; const j = parseInt(document.getElementById('jumlahBeli').value) || 1; if (!u || j < 1) { alert('Pilih ukuran dan jumlah'); return; } if (stok[u] < j) { alert('Stok '+u+' cuma '+stok[u]); return; } stok[u] -= j; const ttl = (j * HARGA[u]).toLocaleString('id-ID'); const now = new Date(); const tglStr = now.toLocaleDateString('id-ID',{day:'2-digit',month:'2-digit',year:'numeric'}).replace(/\//g,'-'); logs.unshift({tgl:tglStr, jam:now.toLocaleTimeString('id-ID',{hour:'2-digit',minute:'2-digit'}), ukuran:u+' x'+j, harga:ttl}); if (logs.length > 100) logs.pop(); update(); }
 
-function back(u) {
-    if (stok[u] < AWAL[u]) {
-        stok[u]++;
-        const now = new Date();
-        const tglStr = now.toLocaleDateString('id-ID', {day:'2-digit',month:'2-digit',year:'numeric'}).replace(/\//g,'-');
-        logs.unshift({tgl:tglStr, jam:wkt(), ukuran:u+' +1', harga:'kembali'});
-        if (logs.length > 100) logs.pop();
-        update();
-    }
-}
-
-function beli() {
-    const u = document.getElementById('sizeSelect').value;
-    const j = parseInt(document.getElementById('jumlahBeli').value) || 1;
-    if (!u || j < 1) { alert('Pilih ukuran dan jumlah'); return; }
-    if (stok[u] < j) { alert(`Stok ${u} cuma ${stok[u]}`); return; }
-    stok[u] -= j;
-    const ttl = (j * HARGA[u]).toLocaleString('id-ID');
-    const now = new Date();
-    const tglStr = now.toLocaleDateString('id-ID', {day:'2-digit',month:'2-digit',year:'numeric'}).replace(/\//g,'-');
-    logs.unshift({tgl:tglStr, jam:wkt(), ukuran:u+' x'+j, harga:ttl});
-    if (logs.length > 100) logs.pop();
-    update();
-}
-
-function resetStok() {
-    if (!confirm('Reset stok & riwayat?')) return;
-    UKURAN.forEach(u => stok[u] = AWAL[u]);
-    logs = [];
-    update();
-}
-
-function wkt() { return new Date().toLocaleTimeString('id-ID', {hour:'2-digit', minute:'2-digit'}); }
+function resetStok() { if (!confirm('Reset stok & riwayat?')) return; UKURAN.forEach(u => stok[u] = AWAL[u]); logs = []; update(); }
 
 function logUpdate() {
     const e = document.getElementById('logEntries');
-    if (logs.length === 0) {
-        e.innerHTML = '<p class="empty-log">Belum ada penjualan</p>';
-        return;
-    }
-    // Convert old string logs to object format
-    logs = logs.map(p => {
-        if (typeof p === 'string') {
-            const now = new Date();
-            const tglStr = now.toLocaleDateString('id-ID', {day:'2-digit',month:'2-digit',year:'numeric'}).replace(/\//g,'-');
-            return {tgl:tglStr, jam:'--:--', ukuran:p.match(/[A-Z]+/)?.[0]||'?', harga:'?'};
-        }
-        return p;
-    });
+    if (logs.length === 0) { e.innerHTML = '<p class="empty-log">Belum ada penjualan</p>'; return; }
     e.innerHTML = logs.slice(0, 30).map(p => {
         const label = p.ukuran.indexOf('+1') !== -1 ? '↩' : '💰';
         const warnaHarga = p.harga === 'kembali' ? '#666' : '#ffc107';
@@ -462,8 +289,7 @@ function logUpdate() {
     }).join('');
 }
 
-muat();
-update();
+muat(); update();
 </script>
 </body>
 </html>
